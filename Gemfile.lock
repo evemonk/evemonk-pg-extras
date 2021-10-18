@@ -144,6 +144,10 @@ GEM
     rubocop-performance (1.11.5)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
+    rubocop-rails (2.12.4)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.7.0, < 2.0)
     ruby-pg-extras (2.1.0)
       pg
       terminal-table
@@ -178,6 +182,9 @@ DEPENDENCIES
   puma
   rails (~> 7.0.0.alpha2)
   rails-pg-extras-web
+  rubocop
+  rubocop-performance
+  rubocop-rails
   standard
   tzinfo-data
 
