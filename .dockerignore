@@ -1,0 +1,7 @@
+.git/*
+.github/*
+.idea/*
+.env
+.env.example
+.deepsource.toml
+.generators
