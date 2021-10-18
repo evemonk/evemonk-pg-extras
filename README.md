@@ -1,24 +1,21 @@
-# README
+# evemonk-pg-extras
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Service container for running `rails-pg-extras-web`.
 
-Things you may want to cover:
+## Configure
 
-* Ruby version
+| Environment variable | Description | Default | Default in container |
+|----------------------|-------------|---------|----------------------|
+| `RAILS_ENV` | Rails environment | `development` | `production` |
+| `RAILS_LOG_TO_STDOUT` | Log everything to stdout | not set | `true` |
+| `RAILS_SERVE_STATIC_FILES` | Serve static assets from /public | not set | `true` |
+| `RAILS_MAX_THREADS` | Rails max threads | `2` | as default |
+| `RAILS_MIN_THREADS` | Rails min threads | `2` | as default |
+| `PG_EXTRAS_USER` | User name for auth. Always set! | not set | not set |
+| `PG_EXTRAS_PASSWORD` | User password for auth. Always set! | not set | not set |
 
-* System dependencies
+## Example `docker-compose.yml`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```yaml
+# TODO: write
+```
