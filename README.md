@@ -1,6 +1,6 @@
 # evemonk-pg-extras
 
-Service container for running `rails-pg-extras-web`.
+Service container for running [rails-pg-extras-web](https://github.com/defkode/rails-pg-extras-web).
 
 ## Configure
 
