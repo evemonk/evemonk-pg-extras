@@ -23,6 +23,8 @@ gem "bootsnap", ">= 1.4.4", require: false
 # Use Sass to process CSS
 # gem "sassc-rails", "~> 2.1"
 
+gem "rails-pg-extras-web"
+
 group :development, :test do
 end
 
