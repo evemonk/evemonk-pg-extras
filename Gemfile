@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.0.2"
+ruby File.read(".ruby-version")
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0.alpha2"
@@ -26,6 +26,7 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "rails-pg-extras-web"
 
 group :development, :test do
+  gem "standard", require: false
 end
 
 group :development do
