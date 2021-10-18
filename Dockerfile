@@ -60,11 +60,6 @@ COPY . .
 
 RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
-# The SECRET_KEY_BASE here isn't used. Precomiling assets doesn't use your
-# secret key, but Rails will fail to initialize if it isn't set.
-
-RUN bundle exec rake SECRET_KEY_BASE=no assets:precompile
-
 FROM ruby:3.0.2-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
