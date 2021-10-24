@@ -24,9 +24,8 @@ group :development, :test do
   gem "rubocop-rails", require: false
   gem "standard", require: false
   gem "brakeman", require: false
+  gem "fasterer", require: false
 end
 
 group :development do
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler", ">= 2.3.3"
 end
