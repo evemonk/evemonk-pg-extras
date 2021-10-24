@@ -7,6 +7,7 @@ Service container for running [rails-pg-extras-web](https://github.com/defkode/r
 | Environment variable | Description | Default | Default in container |
 |----------------------|-------------|---------|----------------------|
 | `RAILS_ENV` | Rails environment | `development` | `production` |
+| `SECRET_KEY_BASE` | Rails secret | not set | not set |
 | `RAILS_LOG_TO_STDOUT` | Log everything to stdout | not set | `true` |
 | `RAILS_SERVE_STATIC_FILES` | Serve static assets from /public | not set | `true` |
 | `RAILS_MAX_THREADS` | Rails max threads | `2` | as default |

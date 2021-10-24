@@ -15,17 +15,22 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootsnap", ">= 1.4.4", require: false
 
 gem "rails-pg-extras-web"
+gem "sentry-ruby"
+gem "sentry-rails"
+gem "newrelic_rpm"
 
 group :development, :test do
   gem "dotenv-rails"
+  gem "rspec-rails"
+end
+
+group :development do
+  gem "license_finder", require: false
+  gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   gem "standard", require: false
   gem "brakeman", require: false
-end
-
-group :development do
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler", ">= 2.3.3"
+  gem "fasterer", require: false
 end
