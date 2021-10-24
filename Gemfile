@@ -18,6 +18,7 @@ gem "rails-pg-extras-web"
 
 group :development, :test do
   gem "dotenv-rails"
+  gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
