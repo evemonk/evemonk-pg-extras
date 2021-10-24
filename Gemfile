@@ -19,6 +19,9 @@ gem "rails-pg-extras-web"
 group :development, :test do
   gem "dotenv-rails"
   gem "rspec-rails"
+end
+
+group :development do
   gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
@@ -26,7 +29,4 @@ group :development, :test do
   gem "standard", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false
-end
-
-group :development do
 end
