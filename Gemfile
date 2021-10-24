@@ -15,6 +15,9 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootsnap", ">= 1.4.4", require: false
 
 gem "rails-pg-extras-web"
+gem "sentry-ruby"
+gem "sentry-rails"
+gem "newrelic_rpm"
 
 group :development, :test do
   gem "dotenv-rails"
