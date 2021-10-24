@@ -1,0 +1,31 @@
+---
+- - :permit
+  - MIT
+  - :who: "@biow0lf"
+    :why:
+    :versions: []
+    :when: 2021-10-24 14:57:08.352008000 Z
+- - :permit
+  - Apache 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2021-10-24 14:57:47.957007000 Z
+- - :permit
+  - New BSD
+  - :who:
+    :why:
+    :versions: []
+    :when: 2021-10-24 14:57:55.142331000 Z
+- - :permit
+  - Simplified BSD
+  - :who:
+    :why:
+    :versions: []
+    :when: 2021-10-24 14:58:09.529585000 Z
+- - :permit
+  - Simplified BSD, ruby
+  - :who:
+    :why:
+    :versions: []
+    :when: 2021-10-24 14:58:18.687057000 Z
