@@ -161,9 +161,9 @@ GEM
     rails-pg-extras (2.2.0)
       activerecord
       ruby-pg-extras (= 2.2.0)
-    rails-pg-extras-web (2.0.1)
+    rails-pg-extras-web (2.2.0)
       pg (~> 1.2)
-      rails-pg-extras (~> 2.0)
+      rails-pg-extras (~> 2.2)
     railties (7.0.0.alpha2)
       actionpack (= 7.0.0.alpha2)
       activesupport (= 7.0.0.alpha2)
