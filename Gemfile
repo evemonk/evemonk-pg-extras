@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby File.read(".ruby-version")
 
-gem "rails", "~> 7.0.0.rc3"
+gem "rails", "~> 7.0.0.0"
 gem "pg", "~> 1.1"
 gem "puma"
 
@@ -17,12 +17,12 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "rails-pg-extras-web"
 gem "rack-floc-off"
 gem "sentry-ruby"
-gem "sentry-rails"
+gem "sentry-rails", ">= 4.8.1"
 gem "newrelic_rpm"
 
 group :development, :test do
-  gem "dotenv-rails"
-  gem "rspec-rails"
+  gem "dotenv-rails", ">= 2.7.6"
+  gem "rspec-rails", ">= 5.0.2"
 end
 
 group :development do
