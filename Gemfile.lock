@@ -162,9 +162,9 @@ GEM
     rails-pg-extras (3.2.3)
       activerecord
       ruby-pg-extras (= 3.2.3)
-    rails-pg-extras-web (3.1.0)
+    rails-pg-extras-web (3.2.3)
       pg (~> 1.2)
-      rails-pg-extras (~> 3.1)
+      rails-pg-extras (~> 3.2)
     railties (7.0.0.rc3)
       actionpack (= 7.0.0.rc3)
       activesupport (= 7.0.0.rc3)
