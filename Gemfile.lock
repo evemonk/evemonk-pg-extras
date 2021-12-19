@@ -159,9 +159,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    rails-pg-extras (3.1.0)
+    rails-pg-extras (3.2.3)
       activerecord
-      ruby-pg-extras (= 3.1.0)
+      ruby-pg-extras (= 3.2.3)
     rails-pg-extras-web (3.1.0)
       pg (~> 1.2)
       rails-pg-extras (~> 3.1)
@@ -211,7 +211,7 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
-    ruby-pg-extras (3.1.0)
+    ruby-pg-extras (3.2.3)
       filesize
       pg
       terminal-table
