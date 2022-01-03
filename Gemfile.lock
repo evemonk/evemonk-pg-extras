@@ -1,5 +1,7 @@
-GEM
-  remote: https://rubygems.org/
+GIT
+  remote: https://github.com/rails/rails.git
+  revision: c837883cfcf880ac7a96223545b0cf4fac2986e0
+  branch: 7-0-stable
   specs:
     actioncable (7.0.0)
       actionpack (= 7.0.0)
@@ -60,6 +62,31 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    rails (7.0.0)
+      actioncable (= 7.0.0)
+      actionmailbox (= 7.0.0)
+      actionmailer (= 7.0.0)
+      actionpack (= 7.0.0)
+      actiontext (= 7.0.0)
+      actionview (= 7.0.0)
+      activejob (= 7.0.0)
+      activemodel (= 7.0.0)
+      activerecord (= 7.0.0)
+      activestorage (= 7.0.0)
+      activesupport (= 7.0.0)
+      bundler (>= 1.15.0)
+      railties (= 7.0.0)
+    railties (7.0.0)
+      actionpack (= 7.0.0)
+      activesupport (= 7.0.0)
+      method_source
+      rake (>= 12.2)
+      thor (~> 1.0)
+      zeitwerk (~> 2.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
     ast (2.4.2)
     bootsnap (1.9.3)
       msgpack (~> 1.0)
@@ -140,20 +167,6 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (7.0.0)
-      actioncable (= 7.0.0)
-      actionmailbox (= 7.0.0)
-      actionmailer (= 7.0.0)
-      actionpack (= 7.0.0)
-      actiontext (= 7.0.0)
-      actionview (= 7.0.0)
-      activejob (= 7.0.0)
-      activemodel (= 7.0.0)
-      activerecord (= 7.0.0)
-      activestorage (= 7.0.0)
-      activesupport (= 7.0.0)
-      bundler (>= 1.15.0)
-      railties (= 7.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -165,13 +178,6 @@ GEM
     rails-pg-extras-web (3.2.3)
       pg (~> 1.2)
       rails-pg-extras (~> 3.2)
-    railties (7.0.0)
-      actionpack (= 7.0.0)
-      activesupport (= 7.0.0)
-      method_source
-      rake (>= 12.2)
-      thor (~> 1.0)
-      zeitwerk (~> 2.5)
     rainbow (3.0.0)
     rake (13.0.6)
     regexp_parser (2.2.0)
@@ -265,7 +271,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma
   rack-floc-off
-  rails (~> 7.0.0)
+  rails!
   rails-pg-extras-web
   rspec-rails
   rubocop
