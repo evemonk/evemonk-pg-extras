@@ -12,7 +12,7 @@ Service container for running [rails-pg-extras-web](https://github.com/defkode/r
 | `RAILS_SERVE_STATIC_FILES` | Serve static assets from /public | not set | `true` |
 | `RAILS_MAX_THREADS` | Rails max threads | `2` | as default |
 | `RAILS_MIN_THREADS` | Rails min threads | `2` | as default |
-| `DATABASE_URL` | Database configuration. Example: `postgres://myuser:mypass@localhost/somedatabase` | not set | not set |
+| `DATABASE_URL` | Database configuration. Example: `postgres://user:password@localhost/database` | not set | not set |
 | `PG_EXTRAS_USER` | User name for auth. Always set! | not set | not set |
 | `PG_EXTRAS_PASSWORD` | User password for auth. Always set! | not set | not set |
 | `NEW_RELIC_LICENSE_KEY` | New Relic license key | not set | not set |
