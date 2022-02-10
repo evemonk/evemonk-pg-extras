@@ -1,4 +1,4 @@
-FROM ruby:3.0.3-slim AS builder
+FROM ruby:3.1.0-slim AS builder
 
 # skipcq: DOK-DL3008
 RUN set -eux; \
@@ -60,7 +60,7 @@ COPY . .
 
 RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
-FROM ruby:3.0.3-slim
+FROM ruby:3.1.0-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
