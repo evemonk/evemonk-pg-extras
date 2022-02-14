@@ -231,7 +231,7 @@ GEM
     sentry-ruby-core (5.1.0)
       concurrent-ruby
     sexp_processor (4.16.0)
-    standard (1.7.1)
+    standard (1.7.2)
       rubocop (= 1.25.1)
       rubocop-performance (= 1.13.2)
     strscan (3.0.1)
