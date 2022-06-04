@@ -4,7 +4,7 @@
 [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/evemonk/evemonk-pg-extras/?ref=repository-badge)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
-Service container for running [rails-pg-extras-web](https://github.com/defkode/rails-pg-extras-web).
+Service container for running [rails-pg-extras](https://github.com/pawurb/rails-pg-extras).
 
 ## Configure
 
