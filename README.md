@@ -1,6 +1,7 @@
 # evemonk-pg-extras
 
 [![RSpec](https://github.com/evemonk/evemonk-pg-extras/actions/workflows/rspec.yml/badge.svg)](https://github.com/evemonk/evemonk-pg-extras/actions/workflows/rspec.yml)
+[![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/evemonk/evemonk-pg-extras/?ref=repository-badge)
 
 Service container for running [rails-pg-extras-web](https://github.com/defkode/rails-pg-extras-web).
 
