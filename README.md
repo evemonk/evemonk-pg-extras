@@ -1,5 +1,7 @@
 # evemonk-pg-extras
 
+[![RSpec](https://github.com/evemonk/evemonk-pg-extras/actions/workflows/rspec.yml/badge.svg)](https://github.com/evemonk/evemonk-pg-extras/actions/workflows/rspec.yml)
+
 Service container for running [rails-pg-extras-web](https://github.com/defkode/rails-pg-extras-web).
 
 ## Configure
