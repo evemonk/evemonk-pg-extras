@@ -87,7 +87,6 @@ GEM
     fasterer (0.10.0)
       colorize (~> 0.7)
       ruby_parser (>= 3.19.1)
-    filesize (0.2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -157,9 +156,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
-    rails-pg-extras (4.5.1)
+    rails-pg-extras (4.7.0)
       rails
-      ruby-pg-extras (= 4.5.1)
+      ruby-pg-extras (= 4.7.0)
     railties (7.0.3)
       actionpack (= 7.0.3)
       activesupport (= 7.0.3)
@@ -206,8 +205,7 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
-    ruby-pg-extras (4.5.1)
-      filesize
+    ruby-pg-extras (4.7.0)
       pg
       terminal-table
     ruby-progressbar (1.11.0)
