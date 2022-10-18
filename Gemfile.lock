@@ -253,7 +253,7 @@ DEPENDENCIES
   rubocop
   rubocop-performance
   rubocop-rails
-  standard
+  standard (= 1.16.1)
   tzinfo-data
 
 RUBY VERSION
