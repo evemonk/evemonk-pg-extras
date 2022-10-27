@@ -249,7 +249,7 @@ DEPENDENCIES
   puma
   rails (= 7.0.4)
   rails-pg-extras
-  rspec-rails
+  rspec-rails (>= 6.0.1)
   rubocop
   rubocop-performance
   rubocop-rails
