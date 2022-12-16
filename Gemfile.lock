@@ -103,8 +103,11 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.7.1)
+    mail (2.8.0)
       mini_mime (>= 0.1.1)
+      net-imap
+      net-pop
+      net-smtp
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
@@ -157,9 +160,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.4)
       loofah (~> 2.19, >= 2.19.1)
-    rails-pg-extras (4.12.0)
+    rails-pg-extras (4.12.1)
       rails
-      ruby-pg-extras (= 4.12.0)
+      ruby-pg-extras (= 4.12.1)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -207,7 +210,7 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
-    ruby-pg-extras (4.12.0)
+    ruby-pg-extras (4.12.1)
       pg
       terminal-table
     ruby-progressbar (1.11.0)
