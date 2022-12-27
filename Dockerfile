@@ -1,10 +1,10 @@
-FROM ruby:3.1.3-slim AS builder
+FROM ruby:3.2.0-slim AS builder
 
 # skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -y ; \
     apt-get dist-upgrade -y ; \
-    apt-get install git gcc make libpq-dev libjemalloc2 shared-mime-info --no-install-recommends -y ; \
+    apt-get install git patch xz-utils gcc make libpq-dev libjemalloc2 shared-mime-info --no-install-recommends -y ; \
     apt-get autoremove -y ; \
     apt-get clean -y ; \
     rm -rf /var/lib/apt/lists/*
@@ -60,7 +60,7 @@ COPY . .
 
 RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
-FROM ruby:3.1.3-slim
+FROM ruby:3.2.0-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
