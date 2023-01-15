@@ -224,7 +224,7 @@ GEM
       sexp_processor (~> 4.16)
     rubyzip (2.3.2)
     sexp_processor (4.16.1)
-    standard (1.21.1)
+    standard (1.22.0)
       language_server-protocol (~> 3.17.0.2)
       rubocop (= 1.42.0)
       rubocop-performance (= 1.15.2)
@@ -266,7 +266,7 @@ DEPENDENCIES
   rubocop
   rubocop-performance
   rubocop-rails
-  standard (= 1.21.1)
+  standard (= 1.22.0)
   tzinfo-data
 
 RUBY VERSION
