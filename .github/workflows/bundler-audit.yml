@@ -1,4 +1,4 @@
-name: bundle-audit
+name: Bundler audit
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
     - cron: "0 21 * * 6"
 
 jobs:
-  bundle-audit:
+  bundler-audit:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,5 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: bundle-audit update
-        run: bundle exec bundle-audit update
-      - name: bundle-audit
-        run: bundle exec bundle-audit
+      - run: bin/bundler-audit update
+      - run: bin/bundler-audit
