@@ -216,7 +216,7 @@ GEM
     ruby-pg-extras (5.2.1)
       pg
       terminal-table
-    ruby-progressbar (1.12.0)
+    ruby-progressbar (1.13.0)
     ruby_parser (3.19.2)
       sexp_processor (~> 4.16)
     rubyzip (2.3.2)
