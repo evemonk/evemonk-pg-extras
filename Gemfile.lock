@@ -261,7 +261,7 @@ DEPENDENCIES
   dotenv-rails
   fasterer
   license_finder
-  pg (~> 1.5)
+  pg
   pry-rails
   puma
   rails (= 7.0.4.3)
