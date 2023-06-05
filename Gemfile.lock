@@ -165,9 +165,9 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-pg-extras (5.2.2)
+    rails-pg-extras (5.2.3)
       rails
-      ruby-pg-extras (= 5.2.2)
+      ruby-pg-extras (= 5.2.3)
     railties (7.0.5)
       actionpack (= 7.0.5)
       activesupport (= 7.0.5)
@@ -215,7 +215,7 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
-    ruby-pg-extras (5.2.2)
+    ruby-pg-extras (5.2.3)
       pg
       terminal-table
     ruby-progressbar (1.13.0)
