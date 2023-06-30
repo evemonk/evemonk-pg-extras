@@ -58,7 +58,7 @@ RUN find /usr/local/bundle/gems/ -name "*.o" -delete
 
 COPY . .
 
-RUN bundle exec bootsnap precompile --gemfile app/ lib/
+RUN bundle exec bootsnap precompile --gemfile app/ lib/ config/
 
 FROM ruby:3.2.2-slim
 
