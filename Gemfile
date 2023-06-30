@@ -17,6 +17,8 @@ gem "bootsnap", require: false
 gem "rails-pg-extras"
 gem "pry-rails"
 
+gem "uri", ">= 0.12.2"
+
 group :development, :test do
   gem "dotenv-rails"
   gem "rspec-rails", ">= 6.0.1"
