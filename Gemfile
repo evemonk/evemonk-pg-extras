@@ -16,6 +16,7 @@ gem "bootsnap", require: false
 
 gem "rails-pg-extras"
 gem "pry-rails"
+gem "sshkit", require: false
 
 gem "uri", ">= 0.12.2"
 
