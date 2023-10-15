@@ -88,6 +88,7 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     diff-lcs (1.5.0)
+    docile (1.4.0)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -267,6 +268,12 @@ GEM
       sexp_processor (~> 4.16)
     rubyzip (2.3.2)
     sexp_processor (4.17.0)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
     sshkit (1.21.5)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -324,6 +331,7 @@ DEPENDENCIES
   rubocop-disable_syntax
   rubocop-performance
   rubocop-rails
+  simplecov
   sshkit
   standard (= 1.31.2)
   tzinfo-data

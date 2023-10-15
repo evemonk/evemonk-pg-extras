@@ -35,3 +35,7 @@ group :development do
   gem "brakeman", require: false
   gem "fasterer", require: false
 end
+
+group :test do
+  gem "simplecov", require: false
+end
