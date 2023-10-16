@@ -52,8 +52,12 @@ RUN bundle exec bootsnap precompile app/ lib/
 FROM base
 
 # Install packages needed for deployment
-RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl postgresql-client && \
+RUN set -eux; \
+    apt-get update -qq ; \
+    apt-get dist-upgrade -qq ; \
+    apt-get install --no-install-recommends -y curl postgresql-client libjemalloc2 shared-mime-info ; \
+    apt-get autoremove -y ; \
+    apt-get clean -y ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Copy built artifacts: gems, application
@@ -61,13 +65,20 @@ COPY --from=build /usr/local/bundle /usr/local/bundle
 COPY --from=build /rails /rails
 
 # Run and own only the runtime files as a non-root user for security
-RUN useradd rails --create-home --shell /bin/bash && \
+RUN set -eux; \
+    useradd rails --create-home --shell /bin/bash ; \
     chown -R rails:rails db log tmp
+
 USER rails:rails
+
+ENV LD_PRELOAD="libjemalloc.so.2"
 
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 # Start the server by default, this can be overwritten at runtime
-EXPOSE 3000
+EXPOSE 3000/tcp
+
 CMD ["./bin/rails", "server"]
