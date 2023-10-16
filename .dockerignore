@@ -37,3 +37,4 @@
 .mdlrc
 .rubocop.yml
 .standard.yml
+coverage/*
