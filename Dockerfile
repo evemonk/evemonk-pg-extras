@@ -35,9 +35,10 @@ RUN set -eux; \
     apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config shared-mime-info
 
 # Install application gems
-COPY Gemfile Gemfile.lock ./
-RUN bundle install && \
-    rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
+COPY .ruby-version Gemfile Gemfile.lock ./
+RUN set -eux; \
+    bundle install ; \
+    rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git ; \
     bundle exec bootsnap precompile --gemfile
 
 # Copy application code
