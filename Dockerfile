@@ -28,8 +28,11 @@ RUN set -eux; \
 FROM base as build
 
 # Install packages needed to build gems
-RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config
+# skipcq: DOK-DL3008
+RUN set -eux; \
+    apt-get update -qq ; \
+    apt-get dist-upgrade -qq ; \
+    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config shared-mime-info
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
