@@ -18,8 +18,9 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
-
 /public/assets
 
 .idea/**/*
 .env
+spec/examples.txt
+coverage/*
