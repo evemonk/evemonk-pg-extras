@@ -277,7 +277,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sshkit (1.21.5)
+    sshkit (1.21.6)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     standard (1.32.0)
