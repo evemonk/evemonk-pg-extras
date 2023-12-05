@@ -1,49 +1,55 @@
 ---
-- - :permit
-  - MIT
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2021-10-24 14:57:08.352008000 Z
-- - :permit
-  - Apache 2.0
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2021-10-24 14:57:47.957007000 Z
-- - :permit
-  - New BSD
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2021-10-24 14:57:55.142331000 Z
-- - :permit
-  - Simplified BSD
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2021-10-24 14:58:09.529585000 Z
-- - :permit
-  - Simplified BSD, ruby
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2021-10-24 14:58:18.687057000 Z
 - - :ignore_group
   - development
   - :who: "@biow0lf"
     :why:
     :versions: []
-    :when: 2021-08-23 22:38:32.031530000 Z
+    :when: 2023-12-05 12:57:34.655216000 Z
 - - :ignore_group
   - test
   - :who: "@biow0lf"
     :why:
     :versions: []
-    :when: 2021-08-23 22:38:36.894888000 Z
+    :when: 2023-12-05 12:57:36.983286000 Z
 - - :permit
-  - ruby
-  - :who: "@biow0lf"
+  - MIT
+  - :who:
     :why:
     :versions: []
-    :when: 2023-10-16 10:47:22.959692000 Z
+    :when: 2023-12-05 12:58:14.236551000 Z
+- - :permit
+  - ruby
+  - :who:
+    :why:
+    :versions: []
+    :when: 2023-12-05 12:58:25.183699000 Z
+- - :permit
+  - Simplified BSD, ruby
+  - :who:
+    :why:
+    :versions: []
+    :when: 2023-12-05 12:58:30.466826000 Z
+- - :permit
+  - Apache 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2023-12-05 12:58:44.469159000 Z
+- - :permit
+  - Simplified BSD
+  - :who:
+    :why:
+    :versions: []
+    :when: 2023-12-05 12:58:50.184616000 Z
+- - :permit
+  - New BSD
+  - :who:
+    :why:
+    :versions: []
+    :when: 2023-12-05 12:59:01.001943000 Z
+- - :permit
+  - MIT AND (BSD-2-Clause OR GPL-2.0-or-later)
+  - :who:
+    :why:
+    :versions: []
+    :when: 2023-12-05 12:59:05.298216000 Z
