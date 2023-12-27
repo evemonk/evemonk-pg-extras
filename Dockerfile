@@ -44,7 +44,8 @@ COPY . .
 RUN bundle exec bootsnap precompile app/ lib/
 
 # Workaround for nokogiri and trivy
-RUN rm -f /usr/local/bundle/ruby/3.2.0/gems/nokogiri-1.15.5-x86_64-linux/dependencies.yml
+RUN rm -f /usr/local/bundle/ruby/3.3.0/gems/nokogiri-1.15.5-x86_64-linux/dependencies.yml
+RUN rm -f /usr/local/bundle/ruby/3.3.0/gems/nokogiri-1.15.5/dependencies.yml
 
 # Final stage for app image
 FROM base
