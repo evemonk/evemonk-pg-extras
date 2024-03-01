@@ -1,4 +1,4 @@
-FROM registry.docker.com/library/ruby:3.3.0-slim@sha256:b449d4b89ee333695ee200da962aa260f3870a5a61290761a7cfb6b10791603c as base
+FROM registry.docker.com/library/ruby:3.3.0-slim@sha256:abcb7c3943a085f511397b65ba7ca32ad56af759a53af932c5e354e1a8f84bcb as base
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
