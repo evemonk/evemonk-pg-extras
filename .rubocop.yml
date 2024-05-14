@@ -135,3 +135,12 @@ Naming/VariableNumber:
 Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
+
+RSpec/BeEq:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/ExampleWording:
+  Enabled: false
