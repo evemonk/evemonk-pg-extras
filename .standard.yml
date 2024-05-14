@@ -1,3 +1,6 @@
 ignore:
   - "bin/*"
   - "db/schema.rb"
+
+plugins:
+  - "standard-rails"

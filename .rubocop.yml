@@ -2,6 +2,8 @@ require:
   - rubocop-disable_syntax
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
 
 AllCops:
   NewCops: enable
@@ -133,3 +135,12 @@ Naming/VariableNumber:
 Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
+
+RSpec/BeEq:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/ExampleWording:
+  Enabled: false
