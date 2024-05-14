@@ -35,6 +35,7 @@ group :development do
   gem "rubocop-rspec", require: false
   gem "rubocop-rspec_rails", require: false
   gem "standard", "1.36.0", require: false
+  gem "standard-rails", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false
   gem "bundler-audit", require: false
