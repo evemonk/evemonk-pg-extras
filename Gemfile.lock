@@ -358,6 +358,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
+  rubocop-rspec_rails
   simplecov
   sshkit
   standard (= 1.36.0)
