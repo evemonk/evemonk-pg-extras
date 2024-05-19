@@ -310,9 +310,6 @@ GEM
     standard-performance (1.4.0)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.21.0)
-    standard-rails (1.0.2)
-      lint_roller (~> 1.0)
-      rubocop-rails (~> 2.23.1)
     stringio (3.1.0)
     strscan (3.1.0)
     terminal-table (3.0.2)
@@ -367,7 +364,6 @@ DEPENDENCIES
   simplecov
   sshkit
   standard (= 1.36.0)
-  standard-rails
   thruster
   tzinfo-data
   uri (>= 0.12.2)
