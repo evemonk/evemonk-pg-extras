@@ -140,6 +140,7 @@ GEM
       date
       net-protocol
     net-pop (0.1.2)
+      net-protocol
     net-protocol (0.2.2)
       timeout
     net-scp (4.0.0)
@@ -155,11 +156,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.5-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.16.5-arm-linux)
-      racc (~> 1.4)
     nokogiri (1.16.5-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.16.5-x86-linux)
       racc (~> 1.4)
     nokogiri (1.16.5-x86_64-darwin)
       racc (~> 1.4)
@@ -334,10 +331,8 @@ GEM
 
 PLATFORMS
   aarch64-linux
-  arm-linux
   arm64-darwin
   ruby
-  x86-linux
   x86_64-darwin
   x86_64-linux
 
