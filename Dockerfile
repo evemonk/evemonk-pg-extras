@@ -40,12 +40,6 @@ RUN set -eux; \
 # Copy application code
 COPY . .
 
-# Precompile bootsnap code for faster boot times
-RUN bundle exec bootsnap precompile app/ lib/
-
-# Workaround for nokogiri and trivy
-RUN rm -f /usr/local/bundle/ruby/3.3.0/gems/nokogiri-1.16.2-x86_64-linux/dependencies.yml
-
 # Final stage for app image
 FROM base
 
