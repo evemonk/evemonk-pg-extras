@@ -39,4 +39,5 @@
 .standard.yml
 .envrc
 .trivyignore
+.trivy.yml
 coverage/*
