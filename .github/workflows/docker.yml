@@ -61,8 +61,4 @@ jobs:
         with:
           image-ref: "docker.io/biow0lf/evemonk-pg-extras:main"
           format: "table"
-          exit-code: "1"
-          ignore-unfixed: true
-          vuln-type: "os,library"
-          severity: "CRITICAL,HIGH"
           trivy-config: ".trivy.yml"
