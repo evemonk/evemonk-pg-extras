@@ -38,6 +38,4 @@
 .rubocop.yml
 .standard.yml
 .envrc
-.trivyignore
-.trivy.yml
 coverage/*
