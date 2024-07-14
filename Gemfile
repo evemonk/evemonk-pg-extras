@@ -8,6 +8,7 @@ gem "rails", "7.2.0.beta3"
 gem "propshaft"
 gem "pg"
 gem "puma"
+gem "thruster"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
