@@ -4,7 +4,8 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.1.3.4"
+gem "rails", "7.2.0.beta3"
+gem "propshaft"
 gem "pg"
 gem "puma"
 gem "thruster"
@@ -22,6 +23,8 @@ gem "sshkit", require: false
 gem "uri", ">= 0.12.2"
 
 group :development, :test do
+  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
+  gem "brakeman", require: false
   gem "dotenv-rails"
   gem "rspec-rails", ">= 6.0.1"
 end
@@ -35,7 +38,6 @@ group :development do
   gem "rubocop-rspec", require: false
   gem "rubocop-rspec_rails", require: false
   gem "standard", "1.39.1", require: false
-  gem "brakeman", require: false
   gem "fasterer", require: false
   gem "bundler-audit", require: false
 end

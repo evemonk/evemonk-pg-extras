@@ -24,12 +24,6 @@
     :versions: []
     :when: 2023-12-05 12:58:25.183699000 Z
 - - :permit
-  - Simplified BSD, ruby
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2023-12-05 12:58:30.466826000 Z
-- - :permit
   - Apache 2.0
   - :who: "@biow0lf"
     :why:
@@ -47,9 +41,3 @@
     :why:
     :versions: []
     :when: 2023-12-05 12:59:01.001943000 Z
-- - :permit
-  - MIT AND (BSD-2-Clause OR GPL-2.0-or-later)
-  - :who: "@biow0lf"
-    :why:
-    :versions: []
-    :when: 2023-12-05 12:59:05.298216000 Z
