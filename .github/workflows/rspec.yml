@@ -20,6 +20,7 @@ env:
   PGHOST: "localhost"
   SECRET_KEY_BASE: "919650e468e29e897a53ef239b6e0228f8b71ec6ed353b691d140945e98d0c6a63731811afc27b61b9094523740962499afabc6d7ad0c872f1d5b62472083a08"
   CI: "yes"
+  BOOTSNAP_LOG: "true"
 
 jobs:
   rspec:
@@ -48,7 +49,7 @@ jobs:
         uses: ruby/setup-ruby@161cd54b698f1fb3ea539faab2e036d409550e3c # v1.187.0
         with:
           bundler-cache: true
-      - run: bundle exec bootsnap precompile --gemfile app/ lib/ config/
+      - run: bundle exec bootsnap precompile --gemfile app/ lib/ config/ Rakefile
       - run: bin/rails zeitwerk:check
       - run: bin/rails db:create
       - run: bin/rails db:migrate
