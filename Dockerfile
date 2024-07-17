@@ -12,6 +12,7 @@ WORKDIR /rails
 # Install base packages
 RUN set -eux; \
     apt-get update -qq ; \
+    apt-get dist-upgrade ; \
     apt-get install --no-install-recommends -y curl libjemalloc2 postgresql-client shared-mime-info ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
