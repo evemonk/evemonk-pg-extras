@@ -10,6 +10,7 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 WORKDIR /rails
 
 # Install base packages
+# hadolint ignore=DL3005
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
