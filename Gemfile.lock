@@ -208,9 +208,9 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-pg-extras (5.3.1)
+    rails-pg-extras (5.4.0)
       rails
-      ruby-pg-extras (= 5.3.1)
+      ruby-pg-extras (= 5.4.0)
     railties (7.2.1)
       actionpack (= 7.2.1)
       activesupport (= 7.2.1)
@@ -272,7 +272,7 @@ GEM
     rubocop-rspec_rails (2.30.0)
       rubocop (~> 1.61)
       rubocop-rspec (~> 3, >= 3.0.1)
-    ruby-pg-extras (5.3.1)
+    ruby-pg-extras (5.4.0)
       pg
       terminal-table
     ruby-progressbar (1.13.0)
@@ -445,7 +445,7 @@ CHECKSUMS
   rails (7.2.1) sha256=fd5684e5d007220960666a3a8b31a57cd1c8cd7f60d88cb40e28e95f1911b705
   rails-dom-testing (2.2.0) sha256=e515712e48df1f687a1d7c380fd7b07b8558faa26464474da64183a7426fa93b
   rails-html-sanitizer (1.6.0) sha256=86e9f19d2e6748890dcc2633c8945ca45baa08a1df9d8c215ce17b3b0afaa4de
-  rails-pg-extras (5.3.1) sha256=14465adb85a43a193dc2a48808c2b37474612ed03336451edf26e98e47ecc96a
+  rails-pg-extras (5.4.0) sha256=62aa326ad50553b4787c708f125f0c682a053b74ba97785c57b47bddea1ff5cf
   railties (7.2.1) sha256=4b6ad279bbfb9228d7e7fbc8df562a8f5d4910e179b957d801fcec176d548463
   rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
   rake (13.2.1) sha256=46cb38dae65d7d74b6020a4ac9d48afed8eb8149c040eccf0523bec91907059d
@@ -465,7 +465,7 @@ CHECKSUMS
   rubocop-rails (2.26.1) sha256=78ef58c4bde201609ed30b65acaac6615275c818f185be9e0c6f73aa6c122afc
   rubocop-rspec (3.0.5) sha256=c6a8e29fb1b00d227c32df159e92f5ebb9e0ff734e52955fb13aff5c74977e0f
   rubocop-rspec_rails (2.30.0) sha256=888112e83f9d7ef7ad2397e9d69a0b9614a4bae24f072c399804a180f80c4c46
-  ruby-pg-extras (5.3.1) sha256=1d4068e2e1a480983b359624c7d2844a04f92d100a2cb2970c4bd26302433faf
+  ruby-pg-extras (5.4.0) sha256=c1b2c1df1bdc5f4005051600b36f62c39f9c36dbd9bb37e5262ed209e58614db
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   ruby_parser (3.21.1) sha256=9d931abe5aec287d65280f811d3cf672564956ef1bd49f528ca48479984d6fec
   rubyzip (2.3.2) sha256=3f57e3935dc2255c414484fbf8d673b4909d8a6a57007ed754dde39342d2373f
