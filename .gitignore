@@ -7,11 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore all environment files (except templates).
+# Ignore all environment files.
 /.env*
 !/.envrc
-!/.env.example
-!/.env*.erb
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -27,6 +25,6 @@
 /public/assets
 
 /.idea
-/.env
 /spec/examples.txt
 /coverage
+/.github
