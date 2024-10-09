@@ -1,6 +1,8 @@
 # This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
-# docker build -t my-app .
-# docker run -d -p 80:80 -p 443:443 --name my-app my-app
+# docker build -t evemonk_pg_extras .
+# docker run -d -p 80:80 --name evemonk_pg_extras evemonk_pg_extras
+
+# For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
 FROM registry.docker.com/library/ruby:3.3.5-slim@sha256:4299eb3ea78d8a864da0e2a47dfa1473082814b6aec23555827eb17a1359a38b AS base
 
@@ -10,7 +12,6 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 WORKDIR /rails
 
 # Install base packages
-# hadolint ignore=DL3005
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
@@ -21,10 +22,9 @@ RUN set -eux; \
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" \
-    BUNDLE_WITHOUT="development:test" \
+    BUNDLE_WITHOUT="development" \
     BOOTSNAP_LOG="true" \
-    BOOTSNAP_READONLY="true" \
-    RUBY_YJIT_ENABLE="1"
+    BOOTSNAP_READONLY="true"
 
 RUN set -eux; \
     gem update --system "3.5.21" ; \
@@ -67,6 +67,7 @@ RUN set -eux; \
     groupadd --system --gid 1000 rails ; \
     useradd rails --uid 1000 --gid 1000 --create-home --shell /bin/bash ; \
     chown -R rails:rails db log tmp
+
 USER 1000:1000
 
 # Entrypoint prepares the database.
@@ -74,7 +75,7 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# Start the server by default, this can be overwritten at runtime
+# Start server via Thruster by default, this can be overwritten at runtime
 EXPOSE 80/tcp
 
 CMD ["./bin/thrust", "./bin/rails", "server"]
